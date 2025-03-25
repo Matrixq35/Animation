@@ -1,0 +1,46 @@
+/* Общий стиль страницы */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Черный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Контейнер для загрузки */
+.loader-container {
+  text-align: center;
+  color: white; /* Белый текст */
+  font-family: Arial, sans-serif;
+}
+
+/* Анимированный круг */
+.loader-circle {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #3498db; /* Синий цвет границы */
+  border-top: 5px solid transparent; /* Прозрачная верхняя часть */
+  border-radius: 50%; /* Создаем круг */
+  animation: spin 1s linear infinite; /* Анимация вращения */
+  margin: 0 auto; /* Центрирование */
+}
+
+/* Текст "Загрузка..." */
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Анимация вращения */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
