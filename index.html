@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузочный экран</title>
+    <style>
+        /* styles.css */
+
+/* Стиль для загрузочного экрана */
+.loader-screen {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;     /* Центрируем по вертикали */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Черный фон */
+    color: white;            /* Белый текст */
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    z-index: 1000;           /* Чтобы экран был поверх всего */
+}
+
+/* Анимация появления и исчезновения текста */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;          /* Начинается с прозрачности 0 */
+    }
+    25% {
+        opacity: 1;          /* Постепенно становится видимым */
+    }
+    75% {
+        opacity: 1;          /* Остается видимым */
+    }
+    100% {
+        opacity: 0;          /* Исчезает */
+    }
+}
+
+.loader-text {
+    animation: fadeInOut 3s ease-in-out; /* Продолжительность анимации */
+}
+    </style>
+</head>
+
+<body>
+    <!-- Загрузочный экран -->
+    <div class="loader-screen">
+        <div id="loader-text" class="loader-text">Загрузка...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
