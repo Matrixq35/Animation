@@ -21,7 +21,7 @@ body {
 .loader-circle {
   width: 60px;
   height: 60px;
-  border: 5px solid #3498db; /* Синий цвет границы */
+  border: 5px solid #d02828; /* Синий цвет границы */
   border-top: 5px solid transparent; /* Прозрачная верхняя часть */
   border-radius: 50%; /* Создаем круг */
   animation: spin 1s linear infinite; /* Анимация вращения */
