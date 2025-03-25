@@ -29,7 +29,7 @@ function showNextPhrase() {
         currentIndex++;
 
         // Вызываем функцию снова через 3 секунды
-        setTimeout(showNextPhrase, 3000);
+        setTimeout(showNextPhrase, 1000);
     } else {
         // Удаляем загрузочный экран после завершения
         document.querySelector('.loader-screen').style.display = 'none';
